@@ -1,0 +1,13 @@
+<style>
+  .profile-cont {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+</style>
+<h1>{{user.username}}</h1>
+
+<div class="profile-cont">
+  <div>{% include 'base/topic_comp.html' %}</div>
+  <div>{% include 'base/feed_comp.html' %}</div>
+  <div>{% include 'base/activity_comp.html' %}</div>
+</div>
